@@ -255,3 +255,81 @@ Ayuda a mantener buenas prácticas y estándares profesionales de desarrollo.
 ### Ahorro de tiempo
 
 Reduce la necesidad de realizar pruebas manuales repetitivas durante el desarrollo del proyecto.
+
+# 6. Resultados Obtenidos
+
+## 6.1 Preprocesamiento Aplicado
+
+| Proceso | Resultado |
+|---|---|
+| Dataset original | 5 filas, 3 columnas |
+| Dataset procesado | 4 filas, 6 columnas |
+| Duplicados eliminados | 1 fila |
+| Valores nulos imputados | 1 valor (`Ingreso`) |
+| Variables categóricas | `Ciudad` → 4 columnas binarias |
+| Normalización | `Edad` e `Ingreso` en rango [0,1] |
+
+
+## 6.2 Transformaciones Realizadas
+
+### Drop Duplicates
+
+Se eliminó la fila con índice `2`, ya que era idéntica a la fila `1`.
+
+
+### Fill Na
+
+El valor `NaN` de la columna `Ingreso` (índice `3`) fue reemplazado por la media de la columna:
+
+```plaintext
+700.0
+```
+
+
+### Get Dummies
+
+La columna categórica `Ciudad` fue transformada en variables binarias:
+
+- `Ciudad_Cuenca`
+- `Ciudad_Guayaquil`
+- `Ciudad_Loja`
+- `Ciudad_Quito`
+
+
+### MinMaxScaler
+
+Las columnas numéricas fueron normalizadas al rango `[0,1]`.
+
+#### Columna Edad
+
+
+::contentReference[oaicite:0]{index=0}
+
+
+Transformación aplicada:
+
+```plaintext
+[20, 25, 30, 35] → [0.0, 0.33, 0.67, 1.0]
+```
+
+
+#### Columna Ingreso
+
+
+::contentReference[oaicite:1]{index=1}
+
+
+Transformación aplicada:
+
+```plaintext
+[500, 700, 900] → [0.0, 0.5, 1.0]
+```
+
+
+# 7. Conclusiones
+
+- Se logró implementar un pipeline básico de preprocesamiento de datos.
+- Se aplicaron buenas prácticas de control de versiones con Git y GitHub.
+- Se automatizó la validación del código utilizando GitHub Actions.
+- El proyecto quedó preparado para futuras mejoras y ampliaciones.
+- Se fortalecieron conocimientos sobre limpieza, transformación y automatización de datos en proyectos de ciencia de datos.
