@@ -4,7 +4,6 @@ Proyecto de preprocesamiento de datos con Git y GitHub
 ## Descripción
 Este proyecto implementa técnicas básicas de preprocesamiento de datos utilizando Python, Pandas y Scikit-learn. Además, se aplica control de versiones con Git y GitHub para la gestión del proyecto.
 
----
 
 ## Funcionalidades
 
@@ -14,7 +13,6 @@ Este proyecto implementa técnicas básicas de preprocesamiento de datos utiliza
 - Normalización de datos
 - Generación de dataset procesado
 
----
 
 ## Tecnologías utilizadas
 
@@ -24,7 +22,6 @@ Este proyecto implementa técnicas básicas de preprocesamiento de datos utiliza
 - Git
 - GitHub
 
----
 
 ## Archivos del proyecto
 
@@ -36,7 +33,6 @@ Este proyecto implementa técnicas básicas de preprocesamiento de datos utiliza
 | `DOCUMENTACION.md` | Documentación del proyecto |
 | `.gitignore` | Exclusión de archivos innecesarios |
 
----
 
 ## Ejecución del proyecto
 
@@ -44,4 +40,3 @@ Instalar dependencias:
 
 ```bash
 pip install pandas scikit-learn
-
